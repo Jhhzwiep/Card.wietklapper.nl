@@ -18,6 +18,7 @@
         />
         <!-- Stylesheet Link -->
         <link rel="stylesheet" href="css/style.css" />
+        <title>Jhhzwiep</title>
     </head>
     <body>
         <main class="container">
@@ -32,7 +33,7 @@
                         <p>Amsterdam, Netherlands - GMT+1</p>
                     </div>
                     <p>Certified Dumbass</p>
-                    <p>A person who has got way to much spare time</p>
+                    <p>A person who has got way too much spare time</p>
                 </section>
                 <div class="links">
                     <ul>
@@ -46,5 +47,21 @@
                         <li><a href="https://open.spotify.com/artist/0BIu8xdPPPf3dGNf5pxP5k?si=0c4bf57a8d074d30">Jhhzwiep (Spotify)</a></li>
                         <li><a href="https://open.spotify.com/artist/3rZWuM5f2kQpwNeDq50Nb2?si=d570b8db89a24710">Bitterbal (Spotify)</a></li>
         </footer>
+
+        <script>
+            const titles = [
+                "Jhhzwiep - Card/bio",
+                "About me!",
+                "Certified Dumbass",
+                "Certified freak",
+                "Follow me on Spotify!",
+                "Amstel radler"
+            ];
+            let index = 0;
+            setInterval(() => {
+                document.title = titles[index];
+                index = (index + 1) % titles.length;
+            }, 3000); // Change title every 3 seconds
+        </script>
     </body>
 </html>
